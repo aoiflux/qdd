@@ -1,20 +1,17 @@
-# qdd
+# QDD - Quick Data Duplicator
 
-**qdd** is a Rust-based project developed by [aoiflux](https://github.com/aoiflux). As of now, the repository does not provide a description, website, or specified topics. However, based on its name, "qdd," it might be related to decision diagram-based quantum computing simulators, similar to the [QDD project](https://github.com/Fujitsu-UTokyo-QDD/QDD) developed by Fujitsu and the University of Tokyo. :contentReference[oaicite:0]{index=0}
+**QDD (Quick Data Duplicator)** is a high-performance file copier that leverages **zero-copy** techniques to efficiently copy files and create disk images. Designed for speed and efficiency, QDD minimizes unnecessary data movement, making it an ideal tool for large-scale file transfers and disk cloning.
 
-## Repository Structure
+## Features
 
-The repository consists of the following primary components:
+- **Zero-Copy File Duplication**: Uses OS-level optimizations to reduce CPU and memory overhead.
+- **Fast Disk Imaging**: Can be used to create and restore disk images with minimal performance impact.
+- **Minimal Resource Usage**: Avoids unnecessary buffer allocations and data copies.
+- 
+## Installation
+To install QDD, ensure you have Rust installed and then build from source:
 
-- **src/**: Contains the source code written in Rust.
-- **.gitignore**: Specifies files and directories to be ignored by Git.
-- **Cargo.toml**: The manifest file for Rust's package manager, Cargo, detailing dependencies and project metadata.
-- **README.md**: Provides an overview and documentation for the project.
-
-## Getting Started
-
-To explore or contribute to this project, follow these steps:
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/aoiflux/qdd.git
+```bash
+git clone https://github.com/aoiflux/qdd.git
+cd qdd
+cargo build --release
