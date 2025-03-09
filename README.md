@@ -7,7 +7,7 @@
 - **Zero-Copy File Duplication**: Uses OS-level optimizations to reduce CPU and memory overhead.
 - **Fast Disk Imaging**: Can be used to create and restore disk images with minimal performance impact.
 - **Minimal Resource Usage**: Avoids unnecessary buffer allocations and data copies.
-- 
+
 ## Installation
 To install QDD, ensure you have Rust installed and then build from source:
 
